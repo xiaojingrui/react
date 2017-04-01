@@ -1,0 +1,84 @@
+@import '../../../.././utils/scss/public.scss';//引入公共scss
+.container{
+	width: 100%;
+	height: (1046rem/$num);
+	background-image: url(../../../image/activity_love/activity_lover_bg.jpg);
+	background-size: cover;
+	padding-top: (92rem/$num);
+	.weixin-share-icon{
+		width: 0;
+		height: 0;
+	}
+	.activity-title{
+		width: (358rem/$num);
+		height: (60rem/$num);
+		background-image: url(../../../image/activity_love/activity_lover_title2.png);
+		background-size: cover;
+		margin: 0 auto;
+	}
+	.activity-code{
+		width: (516rem/$num);
+		height: (440rem/$num);
+		background-image: url(../../../image/activity_love/activity_lover_code2.png);
+		background-size: cover;
+		margin: 0 auto;
+		margin-top: (92rem/$num);
+	}
+	.btn-register{
+		width: (344rem/$num);
+		height: (82rem/$num);
+		background-image: url(../../../image/activity_love/activity_lover_btn1.png);
+		background-size: cover;
+		margin: 0 auto;
+		margin-top: (50rem/$num);
+	}
+	.btn-share{
+		width: (344rem/$num);
+		height: (82rem/$num);
+		background-image: url(../../../image/activity_love/activity_lover_btn3.png);
+		background-size: cover;
+		margin: 0 auto;
+		margin-top: (10rem/$num);
+	}
+	.share-img{
+		width: (640rem/$num);
+		height: (484rem/$num);
+		background-image: url(../../../image/activity_love/activity_lover_share2.png);
+		background-size: cover;
+		position: fixed;
+		bottom: 0;
+		left:0;
+		z-index: 1;
+		display: none;
+		&.show{
+			display: block;
+		}
+	}
+	.share-wrap{
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(0,0,0,.75);
+		z-index: 2;
+		display: none;
+		&.show{
+			display: block;
+		}
+	}
+	.share-text{
+		width: (394rem/$num);
+		height: (104rem/$num);
+		background-image: url(../../../image/activity_love/activity_lover_share1.png);
+		background-size: cover;
+		position: fixed;
+		top: (310rem/$num);
+		left: (100rem/$num);
+		z-index: 3;
+		display: none;
+		&.show{
+			display: block;
+		}
+	}
+}

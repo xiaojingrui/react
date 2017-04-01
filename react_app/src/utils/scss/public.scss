@@ -1,0 +1,218 @@
+/**
+ * 统一背景颜色
+ * @type {[type]}
+ */
+$bg-orange: #EA5504;//用于特别强调的文字,按钮
+$bg-yellow: #FFC000;//用于二级按钮,辅助图形
+$bg-line: #E2E2E2;//用于分割线颜色
+$bg-gray: #F3F5F7;//全局页面背景色（除首页背景外）
+$bg-nav: #FAFAFA;//导航栏背景色
+$bg-shade: rgba(88, 88, 88, 0.8);//遮罩背景颜色
+
+
+/**
+ * 统一字体颜色
+ */
+$fc-title: #333;//主标题 主要字段
+$fc-content: #666;//副标题 内容文本
+$fc-addcontent: #888;//补充文本 辅助信息
+$fc-disable: #cccccc;//不可用 表单提示
+$fc-important: #f68818;//重要提示
+$fc-link: #0090ff;//文本链接
+$fc-white: #fff;//白色文字
+$fc-activity: #000;//活动文字
+
+/**
+ * px转rem
+ */
+$num: 40;
+
+@media only screen and (max-width: 321px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 360px) {
+    html {
+        font-size: 22.5px;
+    }
+}
+
+@media only screen and (min-width: 361px) and (max-width: 375px) {
+    html {
+        font-size: 23.4px;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 414px) {
+    html {
+        font-size: 25.8px;
+    }
+}
+
+@media only screen and (min-width: 415px) and (max-width: 479px) {
+    html {
+        font-size: 27px;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    html {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 32px;
+    }
+}
+@charset "utf-8";
+
+/*元素公共样式*/
+
+
+/* 清除内外边距 */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+
+/* structural elements 结构元素 */
+
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+
+/* list elements 列表元素 */
+
+pre,
+
+/* text formatting elements 文本格式元素 */
+
+fieldset,
+button,
+input,
+textarea,
+
+/* form elements 表单元素 */
+
+th,
+td {
+    /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "微软雅黑", Tahoma, Arial, Helvetica, STHeiti;
+    -webkit-user-select: none; 
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+
+/* 重置列表元素 */
+
+ul,
+ol {
+    list-style: none;
+    text-indent: 0;
+}
+
+span,
+i,
+img {
+    vertical-align: bottom;
+}
+
+
+/* 重置文本格式元素 */
+
+a {
+    text-decoration: none;
+    color: #fff;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    &:hover {
+        text-decoration: underline;
+        color: #fff;
+    }
+}
+
+img {
+    border: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    /* 使得表单元素在 ie 下能继承字体大小 */
+    background-color: transparent;
+    border: none;
+}
+
+p,
+div {
+    line-height: 150%;
+    word-break: break-all;
+    -webkit-appearance:none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    outline: none;
+    
+}
+
+
+/* 重置表格元素 */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input,
+textarea{
+    font-family: "微软雅黑", Tahoma, Arial, Helvetica, STHeiti;
+    border: none;
+    outline:none;
+}
+
+input::-webkit-input-placeholder，textarea:input::-webkit-input-placeholder{
+    color: $fc-addcontent;
+}
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input {
+    background: none;
+    -webkit-appearance: none;
+}
+textarea {
+    resize: none;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+/*元素公共样式end*/
+
+

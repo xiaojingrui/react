@@ -1,0 +1,54 @@
+@import '../../../.././utils/scss/public.scss';//引入公共scss
+.container{
+	width: 100%;
+	height: (1046rem/$num);
+	background-image: url(../../../image/activity_love/activity_lover_bg.jpg);
+	background-size: cover;
+	.container-show{
+		width: (460rem/$num);
+		padding: (50rem/$num) (40rem/$num);
+		background-color: rgba(255,255,255,.6);
+		position: absolute;
+		top: (46rem/$num);
+		left: (50rem/$num);
+		.title{
+			font-size: (48rem/$num);
+			color: $fc-activity;
+			font-weight: bold;
+			text-align: center;
+		}
+		.common-font{
+			font-size: (32rem/$num);
+			color: $fc-activity;
+		}
+		.activity-tip1{
+			@extend .common-font;
+			margin-top: (40rem/$num);
+		}
+		.activity-tip2{
+			@extend .common-font;
+			margin-top: (28rem/$num);
+		}
+		.activity-code{
+			text-align: center;
+			margin-top: (70rem/$num);
+		}
+		.download-btn{
+			width: (344rem/$num);
+			height: (82rem/$num);
+			background-image: url(../../../image/activity_love/activity_lover_btn2.png);
+			background-size: cover;
+			margin: 0 auto;
+			margin-top: (100rem/$num);
+		}
+		.activity-logo{
+			width: (292rem/$num);
+			height: (68rem/$num);
+			background-image: url(../../../image/common/logo.png);
+			background-size: cover;
+			margin: 0 auto;
+			margin-top: (20rem/$num);
+		}
+	}
+	
+}

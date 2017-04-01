@@ -1,0 +1,74 @@
+@import '../../../.././utils/scss/public.scss';//引入公共scss
+.container{
+	width: 100%;
+	height: (1046rem/$num);
+	background-image: url(../../../image/activity_love/activity_lover_bg.jpg);
+	background-size: cover;
+	.activity-love-title{
+		width: (358rem/$num);
+		height: (332rem/$num);
+		background-image: url(../../../image/activity_love/activity_lover_title1.png);
+		background-size: cover;
+		position: absolute;
+		top: (96rem/$num);
+		left: (141rem/$num);
+	}
+	.wrap-register{
+		position:absolute;
+		top: (490rem/$num);
+		left: (60rem/$num);
+		.wrap-input{
+			margin-top: (10rem/$num);
+			.common-input{
+				height: (70rem/$num);
+				line-height: (70rem/$num);
+				border: 1px solid #d23570;
+				border-radius: 2px;
+				padding: 0 (20rem/$num);
+				font-size: (24rem/$num);
+				background-color: #fbf5f5;
+			}
+			.input{
+				width: (472rem/$num);
+				@extend .common-input;
+			}
+			.code-input{
+				width: (230rem/$num);
+				@extend .common-input;
+			}
+			.img-code{
+				width: (135rem/$num);
+				height: (66rem/$num);
+				margin-left: (70rem/$num);
+			}
+			.phone-code{
+				width: (200rem/$num);
+				height: (60rem/$num);
+				line-height: (60rem/$num);
+				margin-left: (40rem/$num);
+				color: #cc0860;
+				border: 1px solid #cc0860;
+				background-color: #fff;
+				font-size: (36rem/$num);
+				text-align: center;
+				position: relative;
+				top: (10rem/$num);
+				&.disabled{
+					color: #b6b6b6;
+					border: 1px solid #b6b6b6;
+					background-color: #b6b6b6;
+				}
+			}
+		}
+		.love-btn{
+			width: (344rem/$num);
+			height: (82rem/$num);
+			background-image: url(../../../image/activity_love/activity_lover_btn1.png);
+			background-size: cover;
+			margin-top: (50rem/$num);
+			margin-left: (80rem/$num);
+		}
+	}
+
+
+}

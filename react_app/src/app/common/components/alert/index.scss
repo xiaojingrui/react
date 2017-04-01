@@ -1,0 +1,14 @@
+@import '../../../.././utils/scss/public.scss';//引入公共scss
+.alert-type1{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	width: 9.5rem;
+	padding: 1.5rem;
+	border-radius: .25rem;
+	background-color: rgba(51,51,51,.9);
+	font-size: .7rem;
+	color: #fff;
+	text-align: center;
+}
